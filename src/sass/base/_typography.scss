@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "Akkurat";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/lineto-akkurat-pro-bold.eot") format("eot"),
+	     url("../fonts/lineto-akkurat-pro-bold.woff") format("woff")
+}
+
+@font-face {
+	font-family: "Akkurat";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/lineto-akkurat-pro-regular.eot") format("eot"),
+	     url("../fonts/lineto-akkurat-pro-regular.woff") format("woff")
+}
+
+@font-face {
+	font-family: "Akkurat";
+	font-style: normal;
+	font-weight: 200;
+	src: url("../fonts/lineto-akkurat-pro-light.eot") format("eot"),
+	     url("../fonts/lineto-akkurat-pro-light.woff") format("woff")
+}
+
+h1, h2 {
+  font-family: "Akkurat";
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  color: #333;
+}
