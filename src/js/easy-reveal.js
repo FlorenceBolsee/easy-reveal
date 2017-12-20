@@ -16,7 +16,7 @@ $(document).ready(
   }
 );
 
-function scroll (){
+var scroll = function () {
   $(document).scroll(
     function(){
       scrollLevel = $(window).scrollTop();
@@ -30,8 +30,6 @@ function scroll (){
       });
     }
   );
-}
+};
 
-var throttled = _.throttle(scroll, 300);
-
-scroll(throttled);
+window.addEventListener('scroll', _.throttle(scroll, 300));
