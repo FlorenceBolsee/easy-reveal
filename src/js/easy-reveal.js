@@ -17,19 +17,15 @@ $(document).ready(
 );
 
 var scroll = function () {
-  $(document).scroll(
-    function(){
-      scrollLevel = $(window).scrollTop();
-      blockList.forEach(function(item) {
-        if(scrollLevel > item.blockOffset - windowHeight){
-          item.block.addClass("reveal");
-        }
-        if(scrollLevel == 0){
-          item.block.removeClass("reveal");
-        }
-      });
+  scrollLevel = $(window).scrollTop();
+  blockList.forEach(function(item) {
+    if(scrollLevel > item.blockOffset - windowHeight){
+      item.block.addClass("reveal");
     }
-  );
+    if(scrollLevel == 0){
+      item.block.removeClass("reveal");
+    }
+  });
 };
 
 window.addEventListener('scroll', _.throttle(scroll, 300));
